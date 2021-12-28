@@ -201,7 +201,8 @@ drupal_initialize() {
 drupal_database_conf_get() {
     local -r key="${1:?key missing}"
     debug "Getting ${key} from Drupal database configuration"
-    grep -E "^\s*'${key}' =>" "$DRUPAL_CONF_FILE" | grep -E -o "=> '.*'" | cut -f2 -d\'
+    php -r '$app_root="'$DRUPAL_VOLUME_DIR'";$site_path="sites/default";require "'$DRUPAL_CONF_FILE'"; print($databases["default"]["default"]["'${key}'"]);'
+#    grep -E "^\s*'${key}' =>" "$DRUPAL_CONF_FILE" | grep -E -o "=> '.*'" | cut -f2 -d\'
 }
 
 ########################
