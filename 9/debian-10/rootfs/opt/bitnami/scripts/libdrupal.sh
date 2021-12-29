@@ -1,8 +1,6 @@
 #!/bin/bash
 # Bitnami Drupal library
-
 # shellcheck disable=SC1091
-
 # Load Generic Libraries
 . /opt/bitnami/scripts/libphp.sh
 . /opt/bitnami/scripts/libfs.sh
