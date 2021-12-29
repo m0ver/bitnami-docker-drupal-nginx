@@ -72,7 +72,7 @@ export DRUPAL_MODULES_DIR="${DRUPAL_BASE_DIR}/modules"
 # Drupal persistence configuration
 export DRUPAL_VOLUME_DIR="${BITNAMI_VOLUME_DIR}/drupal"
 export DRUPAL_MOUNTED_CONF_FILE="${DRUPAL_VOLUME_DIR}/settings.php"
-export DRUPAL_DATA_TO_PERSIST="${DRUPAL_DATA_TO_PERSIST:-sites/ themes/ modules/ profiles/}"
+export DRUPAL_DATA_TO_PERSIST="${DRUPAL_DATA_TO_PERSIST:-sites/ themes/ modules/ profiles/ libraries/}"
 
 # Drupal configuration
 export DRUPAL_PROFILE="${DRUPAL_PROFILE:-standard}" # only used during the first initialization
