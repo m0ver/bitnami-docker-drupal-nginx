@@ -1,5 +1,4 @@
 #!/bin/bash
-#
 # Bitnami Drupal library
 
 # shellcheck disable=SC1091
